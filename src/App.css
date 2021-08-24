@@ -1,0 +1,9 @@
+* {
+    margin:0;
+}
+
+@media (maz-width:990px) {
+    .App{
+        flex-direction: column;
+    }    
+}

@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding:18px;
+}
+.left-side {
+    flex: 0.8;
+}  
+
+.stats {
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+}
