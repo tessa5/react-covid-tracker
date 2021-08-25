@@ -76,14 +76,19 @@ function Graph() {
 
     return (
         <div>
-            <Line
+            {data?.length > 0 && (
+                <Line
                 data={{
                     datasets: [{
-                        data:data
+                        data:data,
+                        borderColor: "#CC1034",
+                        backgroundColor: "rgba(204, 16, 52, 0.5 )",
                     }]
                 }}
                 options= {options}
             />
+            )}
+            
         </div>
     )
 }
