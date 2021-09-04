@@ -1,0 +1,33 @@
+.box {
+    flex: 1;
+  }
+  
+  .box:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .box--selected {
+    border-top: 10px solid greenyellow;
+  }
+  
+  .box--red {
+    border-color: red;
+  }
+  
+  .cases--green {
+    color: lightgreen !important;
+  }
+  
+  .cases {
+    color: #cc1034;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .total {
+    color: #0560b1;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+  }

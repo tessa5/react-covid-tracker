@@ -1,21 +1,24 @@
 import { Card, CardContent, Typography } from '@material-ui/core'
 import React from 'react'
+import './Statistics.css'
 
-function Statistics({title, cases, total}) {
+function Statistics( { title, cases, active, isRed, total, ...props}) {
     return (
-       <Card>
-           <CardContent>
-               <Typography color="textSecondary">
-                   {title}
-               </Typography>
-               <h3>
-                   {cases}
-               </h3>
-               <Typography color="textSecondary">
-                   {total}
-               </Typography>
-           </CardContent>
-       </Card>
+        <div>
+            <Card onClick={props.onClick} className={`box ${active && "box--selected"} ${
+        isRed && "box--red"
+        }`}>
+                <CardContent>
+                    <Typography className="title" color="textSecondary">
+                        {title}
+                    </Typography>
+                    <h2 className={`cases ${!isRed && "cases--green"}`}>{cases}</h2>
+                    <Typography className="total">
+                        {total} Total
+                    </Typography>
+                </CardContent>
+            </Card> 
+        </div>
     )
 }
 
